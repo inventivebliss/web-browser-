@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:weightSum="10">
+    <LinearLayout 
+        android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:weightSum="10">
+    <EditText
+        android:id="@+id/url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:layout_weight="2">
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/go"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="GO"
+        android:layout_weight="8" />
+</LinearLayout>
+<LinearLayout 
+        android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:weightSum="8">
+    <Button
+        android:id="@+id/back"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="GO Back"
+        android:layout_weight="2" />
+
+    <Button
+        android:id="@+id/forward"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="GO Forward"
+        android:layout_weight="2" />
+
+    <Button
+        android:id="@+id/refresh"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Refresh Page"
+        android:layout_weight="2" />
+    <Button
+        android:id="@+id/history"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear History"
+        android:layout_weight="2" />
+</LinearLayout>
+<WebView android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/wvbrowser"/>
+</LinearLayout>
